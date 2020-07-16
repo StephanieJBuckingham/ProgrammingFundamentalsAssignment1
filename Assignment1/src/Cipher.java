@@ -1,6 +1,4 @@
 import java.util.*;
-import java.awt.Font;
-import java.text.*;
 
 /* Stephanie Buckingham
 Programming Fundamentals
@@ -47,7 +45,7 @@ public class Cipher {
 		key = gen.nextInt(9);
 		System.out.println(key);
 
-		//
+		//Generate encoded number and print 
 		int encodedtens, encodedones, codednum;
 		encodedtens = (tensplace + key) % 10;
 		encodedones = (onesplace + key) % 10;
