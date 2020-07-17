@@ -43,7 +43,7 @@ public class Cipher {
 		int key;
 		key = gen.nextInt(9);
 		System.out.println();
-		System.out.println("You encoding key is " + key);
+		System.out.println("Your encoding key is " + key);
 
 		// Generate encoded number and print
 		int encodedtens, encodedones, codednum;
