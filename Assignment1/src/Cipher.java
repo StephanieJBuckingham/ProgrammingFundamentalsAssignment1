@@ -58,7 +58,7 @@ public class Cipher {
 		// Generate key and print
 		Random gen = new Random();
 		int key;
-		key = gen.nextInt(9);
+		key = gen.nextInt(10);
 		System.out.println("Your encoding key is " + key);
 
 		// Generate encoded number and print
