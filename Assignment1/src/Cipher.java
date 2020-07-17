@@ -1,9 +1,11 @@
 import java.util.*;
 
-/* Stephanie Buckingham
-Programming Fundamentals
-Summer Session II
-Assignment 1  */
+/* 
+ * Stephanie Buckingham
+ * Programming Fundamentals
+ * Summer Session II
+ * Assignment 1  
+*/
 
 public class Cipher {
 
