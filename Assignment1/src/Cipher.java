@@ -42,7 +42,7 @@ public class Cipher {
 		Random gen = new Random();
 		int key;
 		key = gen.nextInt(9);
-		System.out.println();
+		System.out.println("\n");
 		System.out.println("Your encoding key is " + key);
 
 		// Generate encoded number and print
@@ -50,7 +50,7 @@ public class Cipher {
 		encodedtens = (tensplace + key) % 10;
 		encodedones = (onesplace + key) % 10;
 		codednum = (encodedtens * 10) + encodedones;
-		System.out.println();
+		System.out.println("\n");
 		System.out.println("Your encoded number is " + codednum);
 
 	}
