@@ -52,8 +52,6 @@ public class Cipher {
 		unencodednumber = int1 + int2 + int3 + int4 + int5;
 		tensplace = unencodednumber / 10;
 		onesplace = unencodednumber % 10;
-		System.out.println(tensplace);
-		System.out.println(onesplace);
 		
 		// Generate key and print
 		Random gen = new Random();
