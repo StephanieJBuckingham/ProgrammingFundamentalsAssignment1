@@ -67,27 +67,33 @@ public class Cipher {
 			System.exit(0);
 		}
 
-
 		// Total numbers and print
 		int Total;
 		Total = int1 + int2 + int3 + int4 + int5;
 		System.out.println("Total = " + Total);
-		
+
 		System.out.println("\n");
 
+		scan.close();
 
-	scan.close();
+		// Initialize unencoded number, the tens digit and ones digit
+		int unencodednumber, tensplace, onesplace;
+		unencodednumber = int1 + int2 + int3 + int4 + int5;
+		tensplace = unencodednumber / 10;
+		onesplace = unencodednumber % 10;
 
-	// Initialize unencoded number, the tens digit and ones digit
-	int unencodednumber, tensplace, onesplace;
-	unencodednumber=int1+int2+int3+int4+int5;tensplace=unencodednumber/10;onesplace=unencodednumber%10;
+		// Generate key and print
+		Random gen = new Random();
+		int key;
+		key = gen.nextInt(10);
+		System.out.println("Your encoding key is " + key);
 
-	// Generate key and print
-	Random gen = new Random();
-	int key;key=gen.nextInt(10);System.out.println("Your encoding key is "+key);
+		// Generate encoded number and print
+		int encodedtens, encodedones, codednum;
+		encodedtens = (tensplace + key) % 10;
+		encodedones = (onesplace + key) % 10;
+		codednum = (encodedtens * 10) + encodedones;
+		System.out.println("Your encoded number is " + codednum);
 
-	// Generate encoded number and print
-	int encodedtens, encodedones,
-			codednum;encodedtens=(tensplace+key)%10;encodedones=(onesplace+key)%10;codednum=(encodedtens*10)+encodedones;System.out.println("Your encoded number is "+codednum);
-
-}}
+	}
+}
